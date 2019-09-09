@@ -9,7 +9,7 @@ urlpatterns = [
     path('drafts/', views.post_list_draft, name='post_list_draft'),
     path('post/<int:pk>/publish', views.post_publish, name='post_publish'),
     path('post/<int:pk>/remove', views.post_remove, name='post_remove'),
-    path('post/<int:pk>/comment/', views.add_comment, name='add_comment_to_post'),
+    path('post/<int:pk>/comment/', views.add_comment, name='add_comment'),
     path('comment/<int:pk>/approve/', views.comment_approve, name='comment_approve'),
     path('comment/<int:pk>/remove/', views.comment_remove, name='comment_remove'),
 ]
